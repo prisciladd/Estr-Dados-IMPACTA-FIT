@@ -21,7 +21,7 @@ def compara_pilhas(pilha1, pilha2):
 		
 		for j in range (len(pilha3)):
 			pilha1.push(j)    
-    	
+		
 		for p in range (len(pilha4)):
 			pilha2.push(p)
 			
@@ -91,5 +91,5 @@ if (tam1 == len(pilha1)) and (tam2 == len(pilha2)) and (not pilha1.is_empty()) a
 
 
 
-    
-    
+	
+	
