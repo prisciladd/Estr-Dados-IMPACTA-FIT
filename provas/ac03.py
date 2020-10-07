@@ -1,32 +1,31 @@
 # Implemente abaixo a funcao: compara_pilhas(pilha1, pilha2)
-pilha3 = pilha1
-pilha4 = pilha2
 
 def compara_pilhas(pilha1, pilha2):
-    
-    if len(pilha1) != len(pilha2):
-        return False
-    
-    if pilha1.top != pilha2.top:
-        return False
-
-    for k in range(len(pilha1)):
-        
-        pop1 = pilha1.pop(k)
-        pop2 = pilha2.pop(k)
+	
+	if len(pilha1) != len(pilha2):
+		return False
+	
+	if pilha1.top != pilha2.top:
+		return False
 		
-		if pop1 != pop2:
-			return False
-
-        else:
+	else:
+		pilha3 = pilha1
+		pilha4 = pilha2
+		
+		for k in range(len(pilha1)):
+			pop1 = pilha1.pop(k)
+			pop2 = pilha2.pop(k)
 			
-			for j in range (len(pilha3)):
-				push1= pilha1.push(j)    
+			if pop1 != pop2:
+				return False
+		
+		for j in range (len(pilha3)):
+			pilha1.push(j)    
     	
-			for p in range (len(pilha4)):
-				push2= pilha2.push(p)
+		for p in range (len(pilha4)):
+			pilha2.push(p)
 			
-			return True
+		return True
 
 	
 # ==========================
