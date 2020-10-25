@@ -2,7 +2,7 @@ def fatorial (n):
     if n == 0: #caso trivial
         return 1
     else:
-        return n * fatorial(n-1)
+        return n * fatorial(n-1) #passo chave n*(n-1)
 
 # Programa Principal
 
